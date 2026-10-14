@@ -1,0 +1,10 @@
+<Solution>
+  <Project Path="01_Algoritma/01_Algoritma.csproj" />
+  <Project Path="02_Değikenler_VeriTipleri/02_Değikenler_VeriTipleri.csproj" />
+  <Project Path="03_TürDönüşümleri/03_TürDönüşümleri.csproj" Id="99faf748-e05e-4798-98b9-81b2b5d43dc7" />
+  <Project Path="04_Operatörler/04_Operatörler.csproj" Id="c1fb2e55-8677-4dc5-ac8d-cf8e5d7764d0" />
+  <Project Path="05_Karar_Yapıları/05_Karar_Yapıları.csproj" Id="bc4180c3-ccf5-44e4-85ea-9021ee7d7093" />
+  <Project Path="06_Bankamatik/06_Bankamatik.csproj" Id="9bcbed78-50b1-4849-9d9d-9ffaa22a694a" />
+  <Project Path="07_StringMetodlar_DateTime/07_StringMetodlar_DateTime.csproj" Id="a9edaa3b-06c9-44db-b8eb-94d1e10cb8b3" />
+  <Project Path="08_Döngüler/08_Döngüler.csproj" Id="09f5cfe8-f1e1-43f6-bde9-665443df974a" />
+</Solution>
