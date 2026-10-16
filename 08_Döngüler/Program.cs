@@ -16,8 +16,6 @@ namespace _08_Döngüler
             //    Console.WriteLine(i);
             //    i++;              //Bu satır olmadan her zaman 1 yazar durmaksızın. Bu satırda tabii kuralları değiştirebiliriz.
             //}
-            #endregion
-
             #region //250-50 aralığındaki sayıları ekrana yazdır
 
             //int a = 250;
@@ -146,6 +144,7 @@ namespace _08_Döngüler
             //}
 
             #endregion
+
             #region 1-10 aralığındaki sayıların toplamını yazdır
 
             //int i = 1;
@@ -156,6 +155,32 @@ namespace _08_Döngüler
             //    i++;
             //}
             //Console.WriteLine("Toplam:"+toplam);
+
+            #endregion
+
+            #region 1-100 aralığındaki tek sayıları ayrı çift sayıları ayrı toplayarak ekrana yazdırınız
+
+            //int sayi = 1;
+            //int cifttoplam = 0;
+            //int tektoplam = 0;
+
+            //while (sayi < 101)
+            //{
+            //    if (sayi % 2 == 0)
+            //    {
+            //        cifttoplam = cifttoplam + sayi;
+
+            //    }
+            //    else
+            //    {
+            //        tektoplam = tektoplam + sayi;
+            //    }
+            //    sayi++;
+
+            //}
+            //Console.WriteLine("Tek Sayıların Toplamı:" + tektoplam);
+            //Console.WriteLine("Çek Sayıların Toplamı:" + cifttoplam);
+
 
             #endregion
 
@@ -293,6 +318,7 @@ namespace _08_Döngüler
 
 
             #endregion
+            #endregion
 
             #region *****For*****
 
@@ -311,22 +337,28 @@ namespace _08_Döngüler
 
             #region Başlangıç ve bitiş değerini kullanıcıdan aldığımız ve aralıktaki sayıalrı ekrana yazdırdığınız for döngüsü
 
-            Console.WriteLine("Başlangıç Değerini Veriniz");
-            int basi = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Bitiş Değerini Veriniz");
-            int soni=Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Başlangıç Değerini Veriniz");
+            //int basi = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Bitiş Değerini Veriniz");
+            //int soni=Convert.ToInt32(Console.ReadLine());
 
-            if(basi>soni)
+            //if(basi>soni)
+            //{ 
+            //    int temp= basi;
+            //    basi= soni;
+            //    soni = temp;
+            //}
 
-            for(int i=basi;i<=soni;i++)
-            {
-                Console.WriteLine(i);
-            }
+            //for (int i=basi;i<=soni;i++)
+            //{
+            //    Console.WriteLine(i);
+            //}
 
 
             #endregion
 
             #endregion
+
         }
     }
 }
