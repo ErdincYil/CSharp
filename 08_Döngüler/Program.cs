@@ -1,4 +1,6 @@
 ﻿using System.ComponentModel;
+using System.Reflection.Metadata;
+using System.Runtime.InteropServices;
 
 namespace _08_Döngüler
 {
@@ -7,7 +9,7 @@ namespace _08_Döngüler
         static void Main(string[] args)
         {
             //Döngüler: Belirli bir işlevi veya işlem kodunu tekrarlı çalıştırmayı sağlar. Bir koşula bağlı olarak(Koşul true olduğu sürece) kod bloğunu tekrar tekrar çalıştırır.
-            //1-10 aralığındaki sayıları alt alta ekrana yazdırınız.
+
             #region *****While Döngüsü*****
 
             //int i = 1;
@@ -370,25 +372,169 @@ namespace _08_Döngüler
             #endregion
 
             #region 1-500 Aralığındaki 13'ün katı oladn kaç adet sayı vardır ve toplamları nedir
-            int adet = 0;
-            int toplam = 0;
-            for(int i=1;i<=500;i++)
-            {
-                if(i%13==0)
-                {
-                    adet++;
-                    toplam += i;
-                }
-            }
-            Console.WriteLine("500'e kadar 13'ün katı olan sayı sayısı:"+adet);
-            Console.WriteLine("500'e kadar 13'ün katı olan sayıların toplamı:"+toplam);
+            //int adet = 0;
+            //int toplam = 0;
+            //for(int i=1;i<=500;i++)
+            //{
+            //    if(i%13==0)
+            //    {
+            //        adet++;
+            //        toplam += i;
+            //    }
+            //}
+            //Console.WriteLine("500'e kadar 13'ün katı olan sayı sayısı:"+adet);
+            //Console.WriteLine("500'e kadar 13'ün katı olan sayıların toplamı:"+toplam);
 
             #endregion
 
             #endregion
 
+            #region *****RANDOM*****
+            //Belirtilen aralıkta rastgele int tipinde sayı üretir
+
+            //Random a = new Random(); //Random kılasında bir nesne(örneklem) üretildi 
+            //int rastgele=a.Next();
+            //int rastgele=a.Next(100);//Belirlediğimiz sınıra kadar rastgele sayı dödürür
+            //int rastgele=a.Next(5,7);//Belirlediğimiz aralıkta rastgele sayı oluşturur
+            //Console.WriteLine(rastgele);
+
+            #region Bilgisayar 1-100 aralığında rastgele bir sayı üretsin.KUllanıcı 5 hakta bu sayıyı tahmin etmeye çalışsın.Bu haklarda "Lütfen tahmininizi büyültünüz" veya "Lütfen tahmininizi Küçültünüz"gibi yönelndirmeler yapılsın 5 hakkı bittiğinde hakkınız bitti mesajı yazdırılsın
+            //int hak = 5;
+            //Random i = new Random();
+            //int sayi = i.Next(1, 101);
+
+            //for(int hak = 0; hak < 5; hak++)
+            //{
+            //    Console.WriteLine("Lütfen Tahminizi Girin");
+            //    int tahmin = Convert.ToInt32(Console.ReadLine());
+            //    if (tahmin == sayi)
+            //    {
+            //        Console.WriteLine("Doğru Tahmin ettiniz");
+            //        break;
+            //    }
+            //    else if (hak==4)
+            //    {
+            //        Console.WriteLine("Hakkınız Bitti");
+            //        break;
+            //    }
+            //    else if (tahmin < sayi)
+            //    {
+            //        Console.WriteLine("Tahmininizi Yükseltin");
+            //    }
+            //    else if (tahmin > sayi)
+            //    {
+            //        Console.WriteLine("Tahmininizi Düşürün"); 
+            //    }  
+            //}
 
 
+            //while(true)
+            //{
+            //    Console.WriteLine("Lütfen Tahminizi Girin");
+            //    int tahmin = Convert.ToInt32(Console.ReadLine());
+            //    if (hak > 0)
+            //    {
+            //        if (tahmin < sayi)
+            //        {
+            //            Console.WriteLine("Tahmininizi Yükseltin");
+            //            hak--;
+            //        }
+            //        else if (tahmin > sayi)
+            //        {
+            //            Console.WriteLine("Tahmininizi Düşürün");
+            //            hak--;
+            //        }
+            //        else
+            //        {
+            //            Console.WriteLine("Doğru Tahmin ettiniz");
+            //        }
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("Hakkınız Bitti");
+            //        break;
+            //    }
+            //}
+
+
+            #endregion
+            #endregion
+
+            
+            //Dik Üçgen
+            //for(int i=1;i<8;i++)
+            //{
+            //    for(int j=i;j>0;j--)
+            //    {
+            //        Console.Write("*");
+            //    }
+            //    Console.WriteLine();
+            //}
+
+            
+            //Kare
+            //for(int i=0;i<7;i++)
+            //{
+            //    if(i==0||i==6)
+            //    {
+            //        Console.WriteLine("***************");
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("*              *");
+            //    }
+            //}
+
+            
+            //İçi Dolu Üçgen
+            //int bosluk = 10;
+            //for(int i =1;i<12;i+=2)
+            //{
+            //    for(int j=0;j<bosluk;j++)
+            //    {
+            //        Console.Write(" ");
+            //    }
+            //    for(int yıldız=0;yıldız<i;yıldız++)
+            //    {
+            //        Console.Write("*");
+            //    }
+            //    Console.WriteLine();
+            //    bosluk--;
+            //}
+
+            
+            //Kum Saati
+            //int bosluk = 0;
+            //for (int i = 13; i > 0; i -= 2)
+            //{
+            //    for (int j = bosluk; j > 0; j--)
+            //    {
+            //        Console.Write(" ");
+            //    }
+            //    for (int yıldız = i; yıldız >0; yıldız--)
+            //    {
+            //        Console.Write("*");
+            //    }
+            //    Console.WriteLine();
+            //    bosluk++;
+            //}
+            //int bosluk2 = 6;
+            //for (int i = 1; i < 12; i += 2)
+            //{
+            //    for (int j = 0; j < bosluk2; j++)
+            //    {
+            //        Console.Write(" ");
+            //    }
+            //    for (int yıldız = 0; yıldız < i; yıldız++)
+            //    {
+            //        Console.Write("*");
+            //    }
+            //    Console.WriteLine();
+            //    bosluk2--;
+            //}
+
+
+            //Çarpım Tablosu Yapılacak
         }
     }
 }
