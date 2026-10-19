@@ -210,38 +210,6 @@ namespace _08_Döngüler
 
             #endregion
 
-            #region Break ve Contıune
-            //break: Döngünün koşul dışında bir sebebten kırılmasını istiyorsak kullanılır.
-
-            //int i = 1;
-            //while(i<22)
-            //{
-            //    Console.WriteLine(i);
-            //    if (i == 7)
-            //    {
-            //        break;//Kendi içinde bulunduğu döngüyü bitirir
-            //    }
-            //    i++;
-            //}
-
-            //Contunıe: Döngü countinue komutunu okuduğu satırdan koşul satırına geri döner.
-
-            //int i = 1;
-            //while (i < 22)
-            //{
-            //    Console.WriteLine(i);
-            //    if (i == 7)
-            //    {
-            //        i++;
-            //        Console.WriteLine("7 deyiz");
-            //        continue;
-            //    }
-            //    i++;
-            //}
-
-
-            #endregion
-
             #region Sonsuz Döngü
 
             //while (1 == 1)
@@ -318,6 +286,39 @@ namespace _08_Döngüler
 
 
             #endregion
+
+            #region Break ve Contıune
+            //break: Döngünün koşul dışında bir sebebten kırılmasını istiyorsak kullanılır.
+
+            //int i = 1;
+            //while(i<22)
+            //{
+            //    Console.WriteLine(i);
+            //    if (i == 7)
+            //    {
+            //        break;//Kendi içinde bulunduğu döngüyü bitirir
+            //    }
+            //    i++;
+            //}
+
+            //Contunıe: Döngü countinue komutunu okuduğu satırdan koşul satırına geri döner.
+
+            //int i = 1;
+            //while (i < 22)
+            //{
+            //    Console.WriteLine(i);
+            //    if (i == 7)
+            //    {
+            //        i++;
+            //        Console.WriteLine("7 deyiz");
+            //        continue;
+            //    }
+            //    i++;
+            //}
+
+
+            #endregion
+
             #endregion
 
             #region *****For*****
@@ -357,7 +358,36 @@ namespace _08_Döngüler
 
             #endregion
 
+            #region Kullanıcının girmiş olduğu sayının faktöriyelini hesaplyan for döngüsü
+            //int sonuc = 1;
+            //Console.WriteLine("Faktöriyelini öğrenmek istediğiniz sayıyı girin");
+            //int sınır = Convert.ToInt32(Console.ReadLine());
+            //for(int i=1;i<=sınır;i++)
+            //{
+            //    sonuc = sonuc * i;
+            //}
+            //Console.WriteLine(sonuc);
             #endregion
+
+            #region 1-500 Aralığındaki 13'ün katı oladn kaç adet sayı vardır ve toplamları nedir
+            int adet = 0;
+            int toplam = 0;
+            for(int i=1;i<=500;i++)
+            {
+                if(i%13==0)
+                {
+                    adet++;
+                    toplam += i;
+                }
+            }
+            Console.WriteLine("500'e kadar 13'ün katı olan sayı sayısı:"+adet);
+            Console.WriteLine("500'e kadar 13'ün katı olan sayıların toplamı:"+toplam);
+
+            #endregion
+
+            #endregion
+
+
 
         }
     }
