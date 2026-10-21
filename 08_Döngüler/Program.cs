@@ -460,18 +460,19 @@ namespace _08_Döngüler
             #endregion
             #endregion
 
-            
+            #region İç içe For Döngüleri
+
             //Dik Üçgen
-            //for(int i=1;i<8;i++)
+            //for (int i = 1; i < 8; i++)
             //{
-            //    for(int j=i;j>0;j--)
+            //    for (int j = i; j > 0; j--)
             //    {
             //        Console.Write("*");
             //    }
             //    Console.WriteLine();
             //}
 
-            
+
             //Kare
             //for(int i=0;i<7;i++)
             //{
@@ -485,7 +486,7 @@ namespace _08_Döngüler
             //    }
             //}
 
-            
+
             //İçi Dolu Üçgen
             //int bosluk = 10;
             //for(int i =1;i<12;i+=2)
@@ -502,7 +503,7 @@ namespace _08_Döngüler
             //    bosluk--;
             //}
 
-            
+
             //Kum Saati
             //int bosluk = 0;
             //for (int i = 13; i > 0; i -= 2)
@@ -533,8 +534,20 @@ namespace _08_Döngüler
             //    bosluk2--;
             //}
 
+            //Çarpım Tablosu
+            for (int i = 1; i <= 10; i++)
+            {
+                for (int j = 1; j <= 10; j++)
+                {
+                    Console.Write(i + "x" + j + "=" + (i * j) + "\t");
+                }
+                Console.WriteLine();
+            }
 
-            //Çarpım Tablosu Yapılacak
+            #endregion
+
+
+
         }
     }
 }

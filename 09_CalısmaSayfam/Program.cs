@@ -267,6 +267,109 @@ namespace _09_CalısmaSayfam
 
             #region Ders adı ve notunu girsin.Ders adı olarak “çıkış” yazılınca giriş bitsin. Sonunda ders sayısını, not ortalamasını ve en yüksek notu yazdır.
 
+            //int derssayisi = 0;
+            //double toplam = 0;
+
+            //while (true)
+            //{
+            //    Console.WriteLine("Lütfen Ders Adını Girin(Bitirmek için cikis yazınız):");
+            //    string dersad = Console.ReadLine();
+            //    if (dersad.ToLower() == "cikis")
+            //    {
+            //        Console.WriteLine("Ders Sayısı:" + derssayisi);
+            //        if (derssayisi > 0)
+            //        {
+            //            Console.WriteLine("****HESAPLANIYOR****");
+            //            Console.WriteLine("Ders Sayısı:" + derssayisi);
+            //            Console.WriteLine("Not Ortalaması:" + toplam / derssayisi);
+            //        }
+            //        break;
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("Lütfen Sınav notunuzuzu girin:");
+            //        double sınavnotu = Convert.ToDouble(Console.ReadLine());
+            //        toplam = toplam + sınavnotu;
+            //        derssayisi++;
+            //    }
+            //}
+
+            #endregion
+
+            #region Dikdörtgen
+
+            //for (int i = 1; i <= 5; i++)
+            //{
+            //    for (int j = 1; j <= 8; j++)
+            //    {
+            //        Console.Write("*");
+            //    }
+            //    Console.WriteLine();
+            //}
+
+
+            #endregion
+
+            #region Sayılardan oluşan dikdörtgen
+            //for(int i=1;i<=4;i++)
+            //{
+            //    for(int j=1;j<=6;j++)
+            //    {
+            //        Console.Write(j);
+            //    }
+            //    Console.WriteLine();
+            //}
+            #endregion
+
+            #region Sayılı dik üçgen
+
+            //for(int i=1;i<=5;i++)
+            //{
+            //    for(int j=1;j<=i;j++)
+            //    {
+            //        Console.Write(j);
+            //    }
+            //    Console.WriteLine();
+            //}
+
+            //Ters Döngü Hali
+
+            //for(int i=5;i>=1;i--)
+            //{
+            //    for(int j=1;j<=i;j++)
+            //    {
+            //        Console.Write(j);
+            //    }
+            //    Console.WriteLine();
+            //}
+            #endregion
+
+            #region Çarpım tablosu (iç içe)
+            //for(int i=1;i<=5;i++)
+            //{
+            //    for (int j=1;j<=5;j++)
+            //    {
+            //        Console.Write(i*j+" ");
+            //    }
+            //    Console.WriteLine();
+            //}
+            #endregion
+
+            #region Sağa Dayalı Üçgen
+
+            //for(int i=1;i<=5;i++)
+            //{
+            //    for(int j=1;j<=5-i;j++)
+            //    {
+            //        Console.Write(" ");
+            //    }
+            //    for(int k=1;k<=i;k++)
+            //    {
+            //        Console.Write("*");
+            //    }
+            //    Console.WriteLine();
+            //}
+
             #endregion
 
             #endregion
